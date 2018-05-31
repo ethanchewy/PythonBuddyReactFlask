@@ -4,12 +4,10 @@ from pylint import lint
 from astroid import MANAGER
 from pylint.reporters.text import TextReporter
 from subprocess import Popen, PIPE, STDOUT
-from flask_cors import CORS, cross_origin
 import fileinput
 
 app = Flask(__name__, template_folder='public')
-CORS(app)
-app.debug = True 
+app.debug = False 
 
 @app.route('/')
 def hello_world():
