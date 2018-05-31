@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import $ from 'jquery';
 
 class Example extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     handleClick(e){
         e.preventDefault();
         var id = this.props.value;
@@ -28,17 +23,13 @@ class Example extends Component {
     render()
     {
         return(
-            <a href="#" className= "Example" id={'codeexample'+this.props.value} onClick={this.handleClick.bind(this)}>{this.props.value}</a>
+            <a href={null} className= "Example" id={'codeexample'+this.props.value} onClick={this.handleClick.bind(this)}>{this.props.value}</a>
         )
     }
 
 }
 
 class ExampleBox extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   renderExample(i) {
     return <Example value={i} />;
   }

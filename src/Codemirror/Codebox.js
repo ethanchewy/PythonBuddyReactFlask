@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import remoteValidator from './cm-validator-remote'
 import createEditor from './CreateEditor'
-import './App.css';
 import './codemirror.css';
 import './lint.css';
 import './dialog.css';
-
-
-import $ from 'jquery';
 
 class Codebox extends Component {
   constructor(props) {

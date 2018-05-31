@@ -4,7 +4,7 @@ export default function remoteValidator(cm, updateLinting, options) {
 	var text = cm.getValue();
 
 
-	if(text.trim() == "")
+	if(text.trim() === "")
 	{
 		updateLinting(cm, []);
 		return;
@@ -21,13 +21,13 @@ export default function remoteValidator(cm, updateLinting, options) {
 			var start_line = error.line_no;
 
             var start_char;
-            if(typeof(error.column_no_start) != "undefined")
+            if(typeof(error.column_no_start) !== "undefined")
 			    start_char = error.column_no_start;
             else
 			    start_char = error.column_no;
 
 			var end_char;
-            if(typeof(error.column_no_stop) != "undefined")
+            if(typeof(error.column_no_stop) !== "undefined")
     			end_char = error.column_no_stop;
             else
     			end_char = error.column_no;
@@ -36,7 +36,7 @@ export default function remoteValidator(cm, updateLinting, options) {
 			var message = error.message;
 
             var severity;
-            if(typeof(error.severity) != "undefined")
+            if(typeof(error.severity) !== "undefined")
                 severity = error.severity;
             else
                 severity = 'error';

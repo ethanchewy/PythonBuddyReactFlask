@@ -4,10 +4,6 @@ import Button from 'react-bootstrap/lib/Button';
 import $ from 'jquery';
 
 class RunButton extends Component {
-    constructor(props) {
-        super(props);
-    }
-    
     handleClick(e){
         e.preventDefault();
         $.getJSON('http://localhost:5000/run_code', {

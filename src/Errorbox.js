@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 
 class Errorbox extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     //Use this.props.data to load table data
     render() {
         return (

@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import Codebox from './Codebox';
+import Codebox from './Codemirror/Codebox';
 import ExampleBox from './ExampleBox';
 import Errorbox from './Errorbox';
 import RunButton from './RunButton';
 import Output from './Output';
+import './App.css';
 
 class Box extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
