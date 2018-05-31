@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import Codebox from './Codemirror/Codebox';
+import Header from './Header';
+import CodeBox from './Codemirror/CodeBox';
 import ExampleBox from './ExampleBox';
-import Errorbox from './Errorbox';
-import RunButton from './RunButton';
-import Output from './Output';
+import ErrorBox from './ErrorBox';
+import Run from './Run';
 import './App.css';
 
 class Box extends Component {
     render() {
         return (
-            <div>
-                <Codebox/>
+            <div className="Box container">
+                <Header/>
+                <CodeBox/>
                 <ExampleBox/>
-                <RunButton />
-                <Output />
-                <Errorbox/>
+                <Run/>
+                <ErrorBox/>
             </div>
         )
     }

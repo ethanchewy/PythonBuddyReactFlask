@@ -23,7 +23,7 @@ class Example extends Component {
     render()
     {
         return(
-            <a href={null} className= "Example" id={'codeexample'+this.props.value} onClick={this.handleClick.bind(this)}>{this.props.value}</a>
+            <button className= "Example" id={'codeexample'+this.props.value} onClick={this.handleClick.bind(this)}>{this.props.value}</button>
         )
     }
 

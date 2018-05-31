@@ -5,7 +5,7 @@ import './codemirror.css';
 import './lint.css';
 import './dialog.css';
 
-class Codebox extends Component {
+class CodeBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,4 +31,4 @@ class Codebox extends Component {
   }
 }
 
-export default Codebox;
+export default CodeBox;

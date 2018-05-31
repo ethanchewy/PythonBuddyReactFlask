@@ -1,5 +1,45 @@
-.Codebox {
-  padding-top: 10px;
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+* {
+  font-family: 'Inconsolata',sans-serif;
+}
+body{
+	background-color: #428bca !important;
+  color:white !important;
+}
+
+.cm-s-default {
+	-webkit-box-shadow: 5px 5px 20px 8px rgba(62,132,189,1);
+	-moz-box-shadow: 5px 5px 20px 8px rgba(62,132,189,1);
+	box-shadow: 5px 5px 20px 8px rgba(62,132,189,1);
+
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+    font-size: 20px !important;
+}
+
+button {
+	color:white;
+}
+
+button:hover {
+	-webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
 }
 
 .Example {
@@ -7,6 +47,11 @@
   color: white;
 }
 
-.ExampleBox {
+.ExampleBox , .Codebox, .Output{
   padding-top: 10px;
+}
+
+.RunButton {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
 }

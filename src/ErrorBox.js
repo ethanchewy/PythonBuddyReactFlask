@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
-
-class Errorbox extends Component {
+class CodeBox extends Component {
     //Use this.props.data to load table data
     render() {
         return (
@@ -27,4 +26,4 @@ class Errorbox extends Component {
         );
     }
 }
-export default Errorbox;
+export default CodeBox;
